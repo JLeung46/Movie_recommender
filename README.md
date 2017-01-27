@@ -3,3 +3,7 @@ Collaborative Filtering is a recommendation algorithm that uses ratings or the b
 
 This project uses an item based collaborative filtering approach to find similarities between items and predict user preferences. The dataset is obtained from MovieLens which contains ratings from 100k users on various movies.
 
+General Overview:
+
+1.) Transform the dataset to a sparse matrix. The rows represent users and columns as movies.
+2.) Create an item to item similarity matrix using cosine similarity. 
