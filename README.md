@@ -12,3 +12,9 @@ General Project Overview:
 3.) Sort the matrix from least to greatest similarity.
 
 4.) Define a neighborhood size to represent the 'n' most similar items.
+
+5.) Check for items rated by the user and if it is within the neighborhood size.
+
+6.) Predict ratings for items not yet rated by weighing the similarity between the target item and other items user has rated.
+
+
