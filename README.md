@@ -7,7 +7,7 @@ General Project Overview:
 
 1.) Transform the dataset to a sparse matrix. The rows represent users and columns as movies.
 
-2.) Create an item to item similarity matrix using cosine similarity. Both rows and columns become items, the values represent their similarity (higher the better).
+2.) Create an item to item similarity matrix using cosine similarity.
 
 3.) Sort the matrix from least to greatest similarity.
 
