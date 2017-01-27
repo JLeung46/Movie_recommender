@@ -9,4 +9,6 @@ General Overview:
 
 2.) Create an item to item similarity matrix using cosine similarity. 
 
-3.) Predict a user's ratings 
+3.) Sort the matrix from least to greatest similarity.
+
+4.) Define a neighborhood size to represent the 'n' most similar items.
