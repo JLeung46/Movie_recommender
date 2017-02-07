@@ -1,20 +1,26 @@
 # Movie recommender
 Collaborative Filtering is a recommendation algorithm that predicts user's preferences based on the ratings or behavior of other users. The assumption here is that if two users have similar opinions on one item then the two user's are likely to have the same opinion on a different item. 
 
-This project uses an item based collaborative filtering approach to find similarities between items to predict user preferences. The dataset is obtained from MovieLens which contains ratings from 43k users on over 3.5k movies.
+This project uses an item based collaborative filtering approach to find similarities between items to predict user preferences. The dataset contains 100,000 ratings from 943 users on 1682 movies obtained from MovieLens.
 
-General Project Overview:
+Project Overview:
 
-1.) Transform the dataset to a sparse matrix. The rows represent users and columns as movies.
+1.) Read in the Data.
 
-2.) Create an item to item similarity matrix using cosine similarity.
+2.) Transform the dataset to a sparse matrix. The rows represent users and columns as movies.
 
-3.) Sort the matrix from least to greatest similarity.
+3.) Create an item to item similarity matrix using cosine similarity.
 
-4.) Define a neighborhood size to represent the 'n' most similar items.
+4.) Sort the matrix from least to greatest similarity.
 
-5.) Check for items rated by the user and if it is within the neighborhood size.
+5.) Define a neighborhood size to represent the 'n' most similar items.
 
-6.) Predict ratings for items not yet rated by weighing the similarity between the target item and other items user has rated.
+6.) Check for items rated by the user and if it is within the neighborhood size.
+
+7.) Predict ratings for all users by weighing the similarity between the target item and other items user has rated.
+
+8.) Calculate RMSE from train & test set.
+
+
 
 
