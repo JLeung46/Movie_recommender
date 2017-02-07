@@ -3,7 +3,7 @@ Collaborative Filtering is a recommendation algorithm that predicts user's prefe
 
 This project uses an item based collaborative filtering approach to find similarities between items to predict user preferences. The dataset contains 100,000 ratings from 943 users on 1682 movies obtained from MovieLens.
 
-Project Overview:
+### Project Overview:
 
 1.) Read in the Data.
 
@@ -21,6 +21,12 @@ Project Overview:
 
 8.) Calculate RMSE from train & test set.
 
+### Usage:
 
+* Clone this repo.
+* Go into the directory using 'cd Movie_recommender'.
+* Run 'python item_based_recc.py'.
+
+### Results:
 
 
