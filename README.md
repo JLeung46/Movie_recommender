@@ -30,3 +30,7 @@ This project uses an item based collaborative filtering approach to find similar
 ### Results:
 
 
+
+References:
+
+https://ashokharnal.wordpress.com/2014/12/18/worked-out-example-item-based-collaborative-filtering-for-recommenmder-engine/
