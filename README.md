@@ -19,7 +19,7 @@ This project uses an item based collaborative filtering approach to find similar
 
 7.) Predict ratings for all users by weighing the similarity between the target item and other items user has rated.
 
-8.) Calculate RMSE from train & test set.
+8.) Calculate RMSE between ratings from train & test set.
 
 ### Usage:
 
