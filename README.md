@@ -28,7 +28,7 @@ This project uses an item based collaborative filtering approach to find similar
 * Run 'python item_based_recc.py'.
 
 ### Results:
-A disjoint test set of 10 ratings per user was used to evaluate this recommender which resulted in the score
+For evaluation, a disjoint test set of 10 ratings per user was used to evaluate this recommender which resulted in the score
 
 RMSE: 1.06
 
