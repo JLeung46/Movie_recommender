@@ -28,9 +28,14 @@ This project uses an item based collaborative filtering approach to find similar
 * Run 'python item_based_recc.py'.
 
 ### Results:
+A disjoint test set of 10 ratings per user was used to evaluate this recommender which resulted in the score
+
+RMSE: 1.06
+
+which reveals that a item-based collaborative filtering engine performs well when attempting to predict user preferences. A major downside of this method is when we cannot find high similarity items between the items the user has rated and the target item. As shown in the picture below, when similar items within the neighborhood size cannot be found, the resulting prediction becomes nan, which is filled with zeros in this approach. A solution is to further experimentat with the neighborhood size which could lead to more optimal results.
 
 
 
-References:
+### References:
 
-https://ashokharnal.wordpress.com/2014/12/18/worked-out-example-item-based-collaborative-filtering-for-recommenmder-engine/
+[1] https://ashokharnal.wordpress.com/2014/12/18/worked-out-example-item-based-collaborative-filtering-for-recommenmder-engine/
