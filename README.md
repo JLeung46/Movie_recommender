@@ -38,7 +38,7 @@ This reveals that a item-based collaborative filtering engine performs well when
 
 * Experiment with different neighborhood sizes and measure performance differences.
 
-* Try different distance measures such as Person's Correlation and adjusted cosine si*milarity.
+* Try different distance measures such as Person's Correlation and adjusted cosine similarity.
 
 
 ### References:
