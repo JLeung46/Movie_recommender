@@ -34,6 +34,8 @@ RMSE: 1.06
 
 This reveals that a item-based collaborative filtering engine performs well when attempting to predict user preferences. A major downside of this method is when we cannot find high similarity items between the items the user has rated and the target item. As shown in the picture below, when similar items within the neighborhood size cannot be found, the resulting prediction becomes nan, which is filled with zeros in this approach. A solution is to further experiment with the neighborhood size which could lead to more optimal results.
 
+![alt tag](images/predictions.png)
+
 ### Future Work
 
 * Experiment with different neighborhood sizes and measure performance differences.
