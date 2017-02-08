@@ -19,7 +19,7 @@ This project uses an item based collaborative filtering approach to find similar
 
 7.) Predict ratings for all users by weighing the similarity between the target item and other items user has rated.
 
-8.) Calculate RMSE between ratings from train & test set.
+8.) Calculate RMSE between predicted ratings and actual ratings from test set.
 
 ### Usage:
 
@@ -28,11 +28,17 @@ This project uses an item based collaborative filtering approach to find similar
 * Run 'python item_based_recc.py'.
 
 ### Results:
-For evaluation, a disjoint test set of 10 ratings per user was used to evaluate this recommender which resulted in the score
+The evaluation metric used for this project is Root Mean Squared Error.
+
+For validation, a disjoint test set of 10 ratings per user was used.
+
+The following score was obtained:
 
 RMSE: 1.06
 
-This reveals that a item-based collaborative filtering engine performs well when attempting to predict user preferences. A major downside of this method is when we cannot find high similarity items between the items the user has rated and the target item. As shown in the picture below, when similar items within the neighborhood size cannot be found, the resulting prediction becomes nan, which is filled with zeros in this approach. A solution is to further experiment with the neighborhood size which could lead to more optimal results.
+The results reveal that a item-based collaborative filtering engine performs fairly well when attempting to predict user preferences. This method is especially useful when there are many more users than items.
+
+A downside of this method is when we cannot find high similarity items between the items the user has rated and the target item. As shown in the picture below, when similar items within the neighborhood size cannot be found, the resulting prediction becomes nan, which is filled with zeros in this approach. A solution is to further experiment with the neighborhood size which could lead to more optimal results.
 
 ![alt tag](images/predictions.png)
 
