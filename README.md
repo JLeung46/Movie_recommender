@@ -1,4 +1,8 @@
 # Movie recommender
+--------------------------
+
+### Introduction
+
 Collaborative Filtering is a recommendation algorithm that predicts user's preferences based on the ratings or behavior of other users. The assumption here is that if two users have similar opinions on one item then the two user's are likely to have the same opinion on a different item. 
 
 This project uses an item based collaborative filtering approach to find similarities between items to predict user preferences. The dataset contains 100,000 ratings from 943 users on 1682 movies obtained from MovieLens.
