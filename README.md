@@ -42,7 +42,7 @@ RMSE: 1.06
 
 The results from this experiment reveal that a item-based collaborative filtering engine performs fairly well when attempting to predict user preferences. This method is especially effective when there are many more users than items because more user's means more ratings for items. Furthermore, rating distributions tend to be much more stable than user profiles which change frequently, requiring the entire model to be retrained. 
 
-A downside of this method is when we cannot find high similarity items between the items the user has rated and the target item. As shown in the picture below, when similar items within the neighborhood size cannot be found, the resulting prediction becomes nan, which is filled with zeros in this approach. A solution is to further experiment with the neighborhood size which could lead to more optimal results.
+A downside of this method is when we cannot find high similarity items between the items the user has rated and the target item. As shown in the picture below, when similar items within the neighborhood size cannot be found, the resulting prediction becomes nan due to the weighted sum calculation not being able to find appropriate similarities. In this approach nans are  filled with zeros since we dont have enough information to provide an accurate prediction rating for that particular item. One solution is to further experiment with the neighborhood size or different measurements of similarity which could lead to more optimal results.
 
 ![alt tag](images/predictions.png)
 
@@ -50,7 +50,7 @@ A downside of this method is when we cannot find high similarity items between t
 
 * Experiment with different neighborhood sizes and measure performance differences.
 
-* Try different distance measures such as Person's Correlation and adjusted cosine similarity.
+* Attempt different distance measures such as Person's Correlation and adjusted cosine similarity.
 
 
 ### References:
