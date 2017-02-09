@@ -21,7 +21,6 @@ class ItemItemRecommender(object):
     def _set_neighborhoods(self):
         '''
         Sorts the item similarity matrix from least to greatest similarity.
-
         Neighborhoods contain the top similarities between items within the specified neighborhood size. 
         '''
         least_to_most_sim_indexes = np.argsort(self.item_sim_mat, 1)
