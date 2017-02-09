@@ -95,10 +95,14 @@ class ItemItemRecommender(object):
     def predict(self,test,all_preds):
         '''
         For each user, get's predictions on items not yet rated.
-
-        Input: Test Data, Predictions for all n_users
-
-        Output: RMSE Score
+        Parameters
+        ----------
+        test (DataFrame): The test data
+        all_preds (Array): Array containing rating predictions for all users.
+        
+        Returns
+        -------
+        result: RMSE Score
         '''
         preds = []
         for user_id in xrange(self.n_users):
@@ -117,7 +121,6 @@ def get_ratings_data():
     
     Returns
     -------
-
     DataFrame: Train DataFrame, 
     DataFrame: Test DataFrame, 
     Sparse Matrix: Sparse Matrix created from Train Data. 
@@ -130,8 +133,6 @@ def get_ratings_data():
     for _, row in train.iterrows():
         ratings_sparse_mat[row.user-1, row.movie-1] = row.rating  # subtract 1 from id's to match 0 indexing
     return train, test, ratings_sparse_mat
-
-
 
 
 
