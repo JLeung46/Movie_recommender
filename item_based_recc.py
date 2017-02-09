@@ -94,7 +94,9 @@ class ItemItemRecommender(object):
 
     def predict(self,test,all_preds):
         '''
-        For each user, get's predictions on items not yet rated.
+        Get's predictions on items not yet rated for all users.
+        Evaluates predicted ratings on the test set.
+
         Parameters
         ----------
         test (DataFrame): The test data
