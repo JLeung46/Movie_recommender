@@ -34,7 +34,6 @@ class ItemItemRecommender(object):
         ----------
         user_id (Integer): ID of user to make predictions on.
         show_run_time (Boolean): Whether to print execution time.
-
         Returns
         -------
         List: a List of rating predictions for a single user.
@@ -60,8 +59,7 @@ class ItemItemRecommender(object):
         Generates rating predictions for all users.
         Parameters
         ----------
-        show_run_time (Boolean): Whether to print execution time.
-        
+        show_run_time (Boolean): Whether to print execution time.      
         Returns
         -------
         Array: An array containing rating predictions for every user.
@@ -80,7 +78,6 @@ class ItemItemRecommender(object):
         ----------
         user_id (Integer): ID of user to make recommendations for.
         n (Integer): Specifies the number of recommendations.
-
         Returns
         -------
         List: List containing indicies representing top n movie recommendations.
@@ -96,12 +93,10 @@ class ItemItemRecommender(object):
         '''
         Get's predictions on items not yet rated for all users.
         Evaluates predicted ratings on the test set.
-
         Parameters
         ----------
         test (DataFrame): The test data
-        all_preds (Array): Array containing rating predictions for all users.
-        
+        all_preds (Array): Array containing rating predictions for all users.  
         Returns
         -------
         result: RMSE Score
@@ -120,7 +115,6 @@ class ItemItemRecommender(object):
 def get_ratings_data():
     '''
     Reads in train and test data and creates a sparse matrix from train data.
-    
     Returns
     -------
     DataFrame: Train DataFrame, 
