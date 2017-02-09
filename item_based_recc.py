@@ -22,7 +22,7 @@ class ItemItemRecommender(object):
         '''
         Sorts the item similarity matrix from least to greatest similarity.
 
-        Neighborhood contains the top similarities between items within the specified neighborhood size. 
+        Neighborhoods contain the top similarities between items within the specified neighborhood size. 
         '''
         least_to_most_sim_indexes = np.argsort(self.item_sim_mat, 1)
         self.neighborhoods = least_to_most_sim_indexes[:, -self.neighborhood_size:]
@@ -30,10 +30,14 @@ class ItemItemRecommender(object):
     def pred_one_user(self, user_id, show_run_time=False):
         '''
         Generates rating predictions for a single user.
+        Parameters
+        ----------
+        user_id (Integer): ID of user to make predictions on.
+        show_run_time (Boolean): Whether to print execution time.
 
-        Input: user_id
-
-        Output: List of rating predictions for a single user.
+        Returns
+        -------
+        List: a List of rating predictions for a single user.
         '''
         start_time = time()
         items_rated_by_this_user = self.ratings_sparse[user_id].nonzero()[1]
@@ -54,8 +58,14 @@ class ItemItemRecommender(object):
     def pred_all_users(self, show_run_time=False):
         '''
         Generates rating predictions for all users.
+        Parameters
+        ----------
+        show_run_time (Boolean): Whether to print execution time.
 
-        Output: An array containing rating predictions for every user.
+        
+        Returns
+        -------
+        Array: An array containing rating predictions for every user.
         '''
         start_time = time()
         all_ratings = [
@@ -66,10 +76,15 @@ class ItemItemRecommender(object):
 
     def top_n_recs(self, user_id, n):
         '''
-        Predicts top n movie ratings for a single user.
+        Recommends top n movies for a single user.
+        Parameters
+        ----------
+        user_id (Integer): ID of user to make recommendations for.
+        n (Integer): Specifies the number of recommendations.
 
-        Input: user_id, n which specifies the number of recommendations  
-        Output: List containing indicies representing top n recommendations
+        Returns
+        -------
+        List: List containing indicies representing top n movie recommendations.
         '''
         pred_ratings = self.pred_one_user(user_id)
         item_index_sorted_by_pred_rating = list(np.argsort(pred_ratings))
@@ -100,8 +115,13 @@ class ItemItemRecommender(object):
 def get_ratings_data():
     '''
     Reads in train and test data and creates a sparse matrix from train data.
+    
+    Returns
+    -------
 
-    Output: Train DataFrame, Test DataFrame, Sparse Train Matrix. 
+    DataFrame: Train DataFrame, 
+    DataFrame: Test DataFrame, 
+    Sparse Matrix: Sparse Matrix created from Train Data. 
     '''
     train = pd.read_table("data/ua.base", names=["user", "movie", "rating", "timestamp"])
     test = pd.read_table("data/ua.test", names =["user", "movie", "rating", "timestamp"])
