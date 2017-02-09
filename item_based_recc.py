@@ -61,7 +61,6 @@ class ItemItemRecommender(object):
         Parameters
         ----------
         show_run_time (Boolean): Whether to print execution time.
-
         
         Returns
         -------
