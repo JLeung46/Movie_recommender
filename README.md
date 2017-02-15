@@ -7,6 +7,8 @@ Collaborative Filtering is a recommendation algorithm that predicts user's prefe
 
 This project uses an item based collaborative filtering approach to find similarities between items to predict user preferences. I utilize cosine similarity to measure similarity between items and a weighted average to make rating predictions for movies not yet seen by users. The algorithm is evaluated against a test set to measure it's performace and possible improvements are suggested.  
 
+### Data
+
 The dataset used contains 100,000 ratings from 943 users on 1682 movies obtained from MovieLens.
 
 ### Project Overview:
