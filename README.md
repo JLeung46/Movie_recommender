@@ -35,6 +35,16 @@ The dataset used contains 100,000 ratings from 943 users on 1682 movies obtained
 * Go into the directory using 'cd Movie_recommender'.
 * Run 'python item_based_recc.py'.
 
+### Item Similarity using Cosine Similarity:
+
+To access the performace of the item similarity matrix I displayed some of the top similarities for two movies below.
+
+![alt tag](images/movie_similarities1.png)
+
+![alt tag](images/Movie_Similarities2.png)
+
+
+
 ### Results:
 The evaluation metric used for this project is Root Mean Squared Error.
 
