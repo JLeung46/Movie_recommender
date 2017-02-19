@@ -43,7 +43,7 @@ To access the performace of the item similarity matrix I displayed some of the t
 
 ![alt tag](images/Movie_Similarity2.png)
 
-
+Through observation, it seems using using cosine similarity as a metric to calculate the similarity between movies is performing well. In both cases shown above, the most similar movies all fall within the same genres of the target movie. Next, we'll quantify our results using a disjoint test set to evaluate the performace of our recommender.  
 
 ### Results:
 The evaluation metric used for this project is Root Mean Squared Error.
