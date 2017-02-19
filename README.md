@@ -39,9 +39,9 @@ The dataset used contains 100,000 ratings from 943 users on 1682 movies obtained
 
 To access the performace of the item similarity matrix I displayed some of the top similarities for two movies below.
 
-![alt tag](images/movie_similarities1.png)
+![alt tag](images/movie_similarity1.png)
 
-![alt tag](images/Movie_Similarities2.png)
+![alt tag](images/Movie_Similarity2.png)
 
 
 
