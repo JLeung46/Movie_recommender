@@ -37,7 +37,7 @@ The dataset used contains 100,000 ratings from 943 users on 1682 movies obtained
 
 ### Item Similarity using Cosine Similarity:
 
-To access the performace of the item similarity matrix, I displayed some of the top similarities for two movies below.
+To assess the performace of the item similarity matrix, I displayed some of the top similarities for two movies below.
 
 ![alt tag](images/movie_similarity1.png)
 
